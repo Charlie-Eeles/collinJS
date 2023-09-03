@@ -1,0 +1,1 @@
+export { createMethodObject } from './create-method-object';
