@@ -2,10 +2,10 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 export interface MethodObject {
-  [key: string]: MethodObject | Function;
+  [key: string]: MethodObject | Record<string, Function> | any;
 }
 
-function createMethodObject(directory: string): MethodObject {
+function createMethodObject(directory: string): MethodObject| any {
   if (!fs.existsSync(directory)) {
     fs.mkdirSync(directory);
   }
