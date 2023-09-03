@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-interface MethodObject {
+export interface MethodObject {
   [key: string]: MethodObject | Record<string, Function>;
 }
 
