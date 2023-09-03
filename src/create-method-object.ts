@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 export interface MethodObject {
-  [key: string]: MethodObject | Record<string, Function>;
+  [key: string]: MethodObject | Function;
 }
 
 function createMethodObject(directory: string): MethodObject {
